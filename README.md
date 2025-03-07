@@ -1,4 +1,4 @@
-# SEN1721- Travel Behaviour Research 2024
+# SEN1721- Travel Behaviour Research 2025
 ## *Latent Class discrete choice models*
 
 
@@ -39,7 +39,7 @@ The list of tutorials may be further extended in the future.
 
 ## 4. Q&A forum
 
-We use the [Issues](https://github.com/SEN1721TUD/Q3_2024_internal/issues) section as the Q&A platform of this part of the course (Latent class discrete choice modes). This is where you can post questions related to lecture content or technical issues with Python. Before you create a new issue, please make sure that the same question hasn’t already been raised by one of your peers. You can also contribute to ongoing discussions by commenting on existing issues to continue the conversation or provide additional insights. As an example, we have already created the first issue; see [Issues](https://github.com/SEN1721TUD/Q3_2024_internal/issues).
+We use the [Issues](https://github.com/SEN1721TUD/Q3_2025/issues) section as the Q&A platform of this part of the course (Latent class discrete choice modes). This is where you can post questions related to lecture content or technical issues with Python. Before you create a new issue, please make sure that the same question hasn’t already been raised by one of your peers. You can also contribute to ongoing discussions by commenting on existing issues to continue the conversation or provide additional insights. As an example, we have already created the first issue; see [Issues](https://github.com/SEN1721TUD/Q3_2025/issues/1).
 
 To create a new issue (question or problem) in the course repository, follow these steps:
 
