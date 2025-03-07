@@ -55,6 +55,7 @@ rapidfuzz==3.9.7
 referencing==0.35.1
 rpds-py==0.20.0
 scipy==1.14.1
+seaborn==0.13.2
 six==1.16.0
 stack-data==0.6.3
 sympy==1.13.2
