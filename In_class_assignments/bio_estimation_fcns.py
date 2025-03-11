@@ -1,7 +1,11 @@
 # Biogeme
 import biogeme.biogeme as bio
 from biogeme import models
-from biogeme.expressions import log, exp, bioMultSum, exp,PanelLikelihoodTrajectory
+from biogeme.expressions import log, PanelLikelihoodTrajectory
+import pandas as pd
+import matplotlib.pyplot as plt
+from PIL import Image
+from mpl_toolkits.axes_grid1 import ImageGrid
 
 def estimate_mnl(V, AV, CHOICE, database, model_name):
     '''
@@ -114,3 +118,45 @@ def print_results(results):
     beta_hat['Rob. t-test']  = beta_hat['Rob. t-test'].round(2)
     beta_hat['Rob. p-value'] = beta_hat['Rob. p-value'].round(2)
     print(beta_hat)
+
+def create_collage(img_path,img_list,txt = None,cols = 5,rows = 4):
+
+    # Convert to list if series
+    if isinstance(img_list, pd.Series):
+        img_list = img_list.tolist()
+
+    # Convert to list if series
+    if isinstance(txt, pd.Series):
+        txt = txt.tolist()
+
+    # GRID GENERATOR
+    fig = plt.figure(figsize=(cols*12, rows*9))
+    grid = ImageGrid(fig, 111, 
+                    nrows_ncols=(rows, cols), 
+                    axes_pad=0.1, 
+                    )
+    ii = 0
+    for i in range(0,len(img_list)):
+        
+        if ii<(rows*cols):
+            path = img_path / ''.join(img_list[i])
+            try:
+                img = Image.open(path)
+                img = img.resize((200,133))
+                grid[ii].imshow(img)
+                
+                # Add title
+                if txt != None:
+                    title_str = txt[ii]
+                    # grid[ii].set_title(title_str,x =0.02,y=0.93,fontsize=30,loc = 'left')
+                    title_obj = grid[ii].set_title(title_str, x=0.02, y=0.9, fontsize=30, loc='left')
+                    title_obj.set_bbox(dict(facecolor='white', alpha=0.5))  # Adjust alpha for transparency
+
+                grid[ii].set_xticks([])
+                grid[ii].set_yticks([])
+
+                ii = ii + 1
+            except:
+                print('not loaded')
+                print(path)
+    plt.axis('off')
