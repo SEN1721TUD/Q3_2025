@@ -120,40 +120,29 @@ Step-by-Step Instructions:
 #### Instruction 2: Using the existing SEN1221A environment.
 
 If you prefer using the SEN1221A environment, you need to install seaborn to successfully run all the labs.
+     
 
-1.	Open Anaconda Terminal: Click the green play button next to your environment name in the “Environments” tab to open a terminal.
-
-      ![img10](./Assets/Anaconda_10.png)
-
-2. **Create a new environment:** Click on the "Create" button at the bottom of the window.
-
-   ![img11](./Assets/Anaconda_11.png)
-
-3. **Configure the new environment:** Enter a name for your new environment, e.g., "SEN1721," and choose the Python version == “3.12.7" from the drop-down menu.
-
-   ![img12](./Assets/Anaconda_3_2024.png)
-
-4. **Activate the environment:** Click on the green "Play" button on the right side of the environment name to open a terminal where the environment is activated.
+1. **Activate the environment:** Click on the green "Play" button on the right side of the environment name to open a terminal where the environment is activated.
 
    ![img13](./Assets/Anaconda_13.png)
 
-5. **Verify Python version:** You can run `python --version` in the terminal.
+2. **Verify Python version:** You can run `python --version` in the terminal.
 
    ![img14](./Assets/Anaconda_14.png)
 
-6. **Install Seaborn**: Run the following command in the terminal to install seaborn:
+3. **Install Seaborn**: Run the following command in the terminal to install seaborn:
 
    ``pip install seaborn``
 
-8. **Install and launch JupyterNotebook/JupyterLab**
+4. **Install and launch JupyterNotebook/JupyterLab**
 
    ![img17](./Assets/Anaconda_17.png)
    
-9. **Import all packages**
+5. **Import all packages**
 
    ![img18](./Assets/Anaconda_18.png)
 
-10. **Run the notebook**: Once the setup is complete, you’re ready to run your code. The required packages will be installed, and you can proceed with the in-class assignment.
+6. **Run the notebook**: Once the setup is complete, you’re ready to run your code. The required packages will be installed, and you can proceed with the in-class assignment.
 
 ### B. Setting up with PIP (Python Package Manager)
 
