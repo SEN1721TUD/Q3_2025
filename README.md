@@ -117,7 +117,7 @@ Step-by-Step Instructions:
 
 12. **Run the notebook**: Once the setup is complete, you’re ready to run your code. The required packages will be installed, and you can proceed with the in-class assignment.
    
-#### Instruction 2: Using the existing SEN1221A environment.
+#### Instruction 2: Using the existing SEN122A environment.
 
 If you prefer using the SEN1221A environment, you need to install seaborn to successfully run all the labs.
      
